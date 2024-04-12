@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -9,4 +11,92 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+body {
+  font-family: oswald;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.menu {
+  grid-column: span 1;
+  background-color: #2d3e4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  grid-column: span 1;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/hero-background.jpg");
+  background-position: 0% 0%, 50% 50%;
+  background-size: cover;
+  height: 100dvh;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+.logo > a,
+.logo > a:active,
+.logo > a:visited {
+  color: #cf404d;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.nav-item {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1rem;
+}
+.nav-item:hover {
+  color: #cf404d;
+}
+.nav-item-active {
+  color: #cf404d;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: white;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.2) translateY(-0.3rem);
 }
