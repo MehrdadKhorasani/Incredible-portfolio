@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>incredible</title>
   </head>
   <body>
@@ -12,10 +13,10 @@
         <a href="#">incredible</a>
       </h1>
       <nav class="nav">
-        <a href="#" class="nav-item nav-item-active">home</a>
-        <a href="#" class="nav-item">about</a>
-        <a href="#" class="nav-item">gallery</a>
-        <a href="#" class="nav-item">contact</a>
+        <a href="#" id="nav-home" class="nav-item">home</a>
+        <a href="#" id="nav-about" class="nav-item">about</a>
+        <a href="#" id="nav-gallery" class="nav-item">gallery</a>
+        <a href="#" id="nav-contact" class="nav-item">contact</a>
       </nav>
       <div class="social-icons">
         <svg class="social-icon">
@@ -42,7 +43,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="hero hidden">
+      <div class="hero">
         <h1 class="hero-heading">WELCOME TO THE INCREDIBLE</h1>
         <p class="hero-paragraph">This is some text inside of a div block.</p>
         <div class="hero-button-container">
@@ -54,19 +55,50 @@
         <div class="about-content">
           <h2>section heading</h2>
           <p>This is some text inside of a div block.</p>
-          <div>
-            <div>
+          <div class="about-row">
+            <div class="about-column">
               <img class="about-img" src="img/about-cam.svg" alt="cam" />
-              <h3>Style 1</h3>
-              <p>
+              <h3 class="h3">Style 1</h3>
+              <p class="about-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique.
               </p>
-              <a href="#">text link</a>
+              <a href="#" class="about-link">text link</a>
+            </div>
+            <div class="about-column">
+              <img class="about-img" src="img/about-table.svg" alt="table" />
+              <h3 class="h3">Style 2</h3>
+              <p class="about-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+              </p>
+              <a href="#" class="about-link">text link</a>
+            </div>
+            <div class="about-column">
+              <img class="about-img" src="img/about-engine.svg" alt="engine" />
+              <h3 class="h3">Style 3</h3>
+              <p class="about-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+              </p>
+              <a href="#" class="about-link">text link</a>
+            </div>
+            <div class="about-column">
+              <img class="about-img" src="img/about-cloud.svg" alt="cloud" />
+              <h3 class="h3">Style 4</h3>
+              <p class="about-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+              </p>
+              <a href="#" class="about-link">text link</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="about-cta">
+      <h2 class="about-cta-h2">Here you can put some text</h2>
+      <button class="about-cta-btn">Call To Action</button>
     </div>
   </body>
 </html>
