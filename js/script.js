@@ -6,24 +6,51 @@ const navContact = document.getElementById("nav-contact");
 // sections
 const sectionHero = document.querySelector(".hero");
 const sectionAbout = document.querySelector(".about");
-const sectionCta = document.querySelector(".about-cta");
+const sectionCta = document.querySelector(".cta");
+const sectionGallery = document.querySelector(".gallery");
 
-sectionAbout.classList.add("hidden");
-sectionCta.classList.add("hidden");
-navHome.classList.add("nav-item-active");
+// init
+function init() {
+  // sections
+  sectionAbout.classList.add("hidden");
+  sectionCta.classList.add("hidden");
+  sectionGallery.classList.add("hidden");
+  sectionHero.classList.remove("hidden");
+  // nav
+  navHome.classList.add("nav-item-active");
+  navAbout.classList.remove("nav-item-active");
+  navGallery.classList.remove("nav-item-active");
+}
 
+// Home
+navHome.addEventListener("click", () => {
+  init();
+});
+
+// About
 navAbout.addEventListener("click", () => {
+  // sections
   sectionAbout.classList.remove("hidden");
   sectionCta.classList.remove("hidden");
   sectionHero.classList.add("hidden");
+  sectionGallery.classList.add("hidden");
+  // nav
   navHome.classList.remove("nav-item-active");
+  navGallery.classList.remove("nav-item-active");
   navAbout.classList.add("nav-item-active");
 });
 
-navHome.addEventListener("click", () => {
+// Gallery
+navGallery.addEventListener("click", () => {
+  // sections
   sectionAbout.classList.add("hidden");
   sectionCta.classList.add("hidden");
-  sectionHero.classList.remove("hidden");
-  navHome.classList.add("nav-item-active");
+  sectionHero.classList.add("hidden");
+  sectionGallery.classList.remove("hidden");
+  // nav
+  navHome.classList.remove("nav-item-active");
   navAbout.classList.remove("nav-item-active");
+  navGallery.classList.add("nav-item-active");
 });
+
+init();
