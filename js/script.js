@@ -9,6 +9,7 @@ const sectionAbout = document.querySelector(".about");
 const sectionCta = document.querySelector(".cta");
 const sectionGallery = document.querySelector(".gallery");
 const sectionContact = document.querySelector(".contact");
+const footer = document.querySelector("footer");
 
 // init
 function init() {
@@ -17,6 +18,7 @@ function init() {
   sectionCta.classList.add("hidden");
   sectionGallery.classList.add("hidden");
   sectionContact.classList.add("hidden");
+  footer.classList.add("hidden");
   sectionHero.classList.remove("hidden");
   // nav
   navAbout.classList.remove("nav-item-active");
@@ -37,6 +39,7 @@ navAbout.addEventListener("click", () => {
   sectionCta.classList.remove("hidden");
   sectionHero.classList.add("hidden");
   sectionContact.classList.add("hidden");
+  footer.classList.add("hidden");
   sectionGallery.classList.add("hidden");
   // nav
   navHome.classList.remove("nav-item-active");
@@ -52,6 +55,7 @@ navGallery.addEventListener("click", () => {
   sectionCta.classList.add("hidden");
   sectionHero.classList.add("hidden");
   sectionContact.classList.add("hidden");
+  footer.classList.add("hidden");
   sectionGallery.classList.remove("hidden");
   // nav
   navHome.classList.remove("nav-item-active");
@@ -68,6 +72,8 @@ navContact.addEventListener("click", () => {
   sectionHero.classList.add("hidden");
   sectionGallery.classList.add("hidden");
   sectionContact.classList.remove("hidden");
+  footer.classList.remove("hidden");
+
   // nav
   navHome.classList.remove("nav-item-active");
   navAbout.classList.remove("nav-item-active");

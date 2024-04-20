@@ -249,6 +249,7 @@ body {
   color: #30ad64;
 }
 
+/* CTA */
 .cta {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
@@ -357,8 +358,75 @@ body {
 }
 
 .form {
-  width: 100%;
-  margin-top: 4.5rem;
+  width: 55%;
+  margin: 4.5rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 4.5rem 10rem 4.5rem;
+  gap: 1.8rem;
+}
+
+.form-name,
+.form-email,
+.form-message {
+  padding: 1.5rem 0.8rem;
+  border: solid 0.15rem #aaa;
+  border-radius: 0.4rem;
+  font-weight: 400;
+  color: #333;
+  vertical-align: middle;
+  outline: none;
+  font-family: inherit;
+}
+.form-name::placeholder,
+.form-email::placeholder,
+.form-message::placeholder {
+  color: #aaa;
+}
+.form-name {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.form-email {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.form-message {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+.form-button {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #cf404d;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-button:hover {
+  background-color: #000;
+}
+
+footer {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  background-color: #edeff2;
+  margin-top: -8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1rem solid #e1e1e1;
+}
+
+footer > h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.74);
 }
 
 /* OTHERS */
