@@ -15,7 +15,7 @@ html {
 body {
   font-family: oswald;
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 33rem 1fr;
 }
 
 .menu {
@@ -432,4 +432,28 @@ footer > h4 {
 /* OTHERS */
 .hidden {
   display: none;
+}
+
+@media (max-width: 991px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    grid-row: 1 / span 1;
+    background-color: #2d3e4f;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .nav,
+  .social-icons {
+    display: none;
+  }
+
+  .content {
+    grid-row: 2 / span 1;
+  }
 }
