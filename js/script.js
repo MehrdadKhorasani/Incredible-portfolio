@@ -82,3 +82,11 @@ navContact.addEventListener("click", () => {
 });
 
 init();
+
+// Burger-button
+document.querySelector(".burger-menu").addEventListener("focus", function () {
+  document.querySelector(".burger-list").classList.add("hello");
+});
+document.querySelector(".burger-menu").addEventListener("blur", function () {
+  document.querySelector(".burger-list").classList.remove("hello");
+});
