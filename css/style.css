@@ -557,35 +557,7 @@ footer > h4 {
   }
   /* CTA */
   .cta {
-    grid-row: auto;
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-    background-color: #cf404d;
-    margin-top: -12rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .cta-h2 {
-    font-weight: 400;
-    font-size: 3.2rem;
-    color: #fff;
-  }
-  .cta-btn {
-    font-family: inherit;
-    font-size: 1.6rem;
-    padding: 1rem 2rem;
-    color: #fff;
-    background: none;
-    border: 0.2rem solid #fff;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .cta-btn:hover {
-    background-color: #2d3e4f;
-    border-color: #2d3e4f;
+    display: none;
   }
 }
 
