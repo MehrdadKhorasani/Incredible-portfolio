@@ -3,6 +3,13 @@ const navHome = document.getElementById("nav-home");
 const navAbout = document.getElementById("nav-about");
 const navGallery = document.getElementById("nav-gallery");
 const navContact = document.getElementById("nav-contact");
+
+// Burger Menu
+const burgerHome = document.querySelector(".burger-item-home");
+const burgerAbout = document.querySelector(".burger-item-about");
+const burgerGallery = document.querySelector(".burger-item-gallery");
+const burgerContact = document.querySelector(".burger-item-contact");
+
 // sections
 const sectionHero = document.querySelector(".hero");
 const sectionAbout = document.querySelector(".about");
@@ -89,4 +96,34 @@ document.querySelector(".burger-menu").addEventListener("focus", function () {
 });
 document.querySelector(".burger-menu").addEventListener("blur", function () {
   document.querySelector(".burger-list").classList.remove("hello");
+});
+
+// Home Burger
+burgerHome.addEventListener("touchstart", () => init());
+// About Burger
+burgerAbout.addEventListener("touchstart", () => {
+  sectionAbout.classList.remove("hidden");
+  sectionCta.classList.remove("hidden");
+  sectionHero.classList.add("hidden");
+  sectionContact.classList.add("hidden");
+  footer.classList.add("hidden");
+  sectionGallery.classList.add("hidden");
+});
+// Gallery Burger
+burgerGallery.addEventListener("touchstart", () => {
+  sectionAbout.classList.add("hidden");
+  sectionCta.classList.add("hidden");
+  sectionHero.classList.add("hidden");
+  sectionContact.classList.add("hidden");
+  footer.classList.add("hidden");
+  sectionGallery.classList.remove("hidden");
+});
+// Contact Burger
+burgerContact.addEventListener("touchstart", () => {
+  sectionAbout.classList.add("hidden");
+  sectionCta.classList.add("hidden");
+  sectionHero.classList.add("hidden");
+  sectionGallery.classList.add("hidden");
+  sectionContact.classList.remove("hidden");
+  footer.classList.remove("hidden");
 });

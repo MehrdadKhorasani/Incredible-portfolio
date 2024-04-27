@@ -53,7 +53,8 @@ body {
 }
 
 .burger-menu:active span,
-.burger-menu:focus span {
+.burger-menu:focus span,
+.burger-menu:hover span {
   background-color: #cf404d;
 }
 
