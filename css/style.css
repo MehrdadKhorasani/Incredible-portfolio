@@ -559,6 +559,10 @@ footer > h4 {
   .cta {
     display: none;
   }
+  /* FOOTER */
+  footer {
+    display: none;
+  }
 }
 
 @media (max-width: 766px) {
